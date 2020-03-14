@@ -1,10 +1,3 @@
-
-"""This class is valideate whether user input is English or not
-@Author: Adarsh Koppa Manjunath
-@Input
-    topic(str)
-@Output
-    Boolean""""
 class validation:
     def isEnglish(self,topic):
         try:
