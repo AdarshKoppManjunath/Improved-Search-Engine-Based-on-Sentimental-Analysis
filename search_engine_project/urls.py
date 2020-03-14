@@ -17,41 +17,34 @@ from django.contrib import admin
 from django.urls import path
 from search_engine_app import views
 from django.conf.urls import  url, include
-from search_engine_app.views import ise
-from search_engine_app.views import viewYourUpdatedResult
-
-
-from search_engine_app.views import projectTeam
-#from search_engine_app.views import login
-#from search_engine_app.views import signUp
-from search_engine_app.views import loginPage
-from search_engine_app.views import registerPage
-from search_engine_app.views import logoutUser
-from search_engine_app.views import userPortal
+from search_engine_app.views.import_required_view_libraries import *
+from django.contrib import admin
 
 
 
-#from search_engine.views import search_engineView
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('search_engine_app/',views.search),
-
-    path('search_engine_app/home.html', views.search),
-    path('search_engine_app/ise.html', views.ise),
-    path('search_engine_app/projectTeam.html', views.projectTeam),
-    path('search_engine_app/login.html',  views.loginPage, name = 'login'),
-    path('search_engine_app/register.html',  views.registerPage),
-    path("logout", logoutUser, name="logout"),
-    #path('search_engine_app/signUp.html',  views.signUp),
-    path("search_engine_app/trending.html",views.trending),
-    path("search_engine_app/userPortal.html",views.userPortal),
-    path("search_engine_app/viewYourUpdatedResults.html",views.viewYourUpdatedResult),
 
 
-   
 
-    
-]
+class URLFactory:
+
+    def get_view_functions():
+       
+
+        urlpatterns = [
+            path('admin/', admin.site.urls),
+            path('search_engine_app/',SearchResultView.search),
+            path('search_engine_app/home.html', SearchResultView.search),
+            path('search_engine_app/ise.html', HomePageIntroView.ise),
+            path('search_engine_app/projectTeam.html', HomePageIntroView.projectTeam),
+            path('search_engine_app/login.html', UsersAuthenticationView.loginPage, name = 'login'),
+            path('search_engine_app/register.html',  UsersAuthenticationView.registerPage),
+            path("search_engine_app/logout", UsersAuthenticationView.logoutUser, name="logout"),
+            path("search_engine_app/userPortal.html",UserPortalView.userPortal),
+            path("search_engine_app/viewYourUpdatedResults.html",NewsReaderStoryUpdateView.viewYourUpdatedResult),
+            
+        ]
+        return urlpatterns
+view_factory_obj=URLFactory
+urlpatterns=view_factory_obj.get_view_functions()
 
 
