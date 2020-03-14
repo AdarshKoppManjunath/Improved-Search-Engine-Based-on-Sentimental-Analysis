@@ -4,7 +4,8 @@ from search_engine_app.models import UserPortal
 from search_engine_app.search_web import SearchWeb
 from search_engine_app.observer_pattern.subject_topic import NewsPublisher
 
-
+"""This file is to monitor url status, back-ground task linrary is used for this task.
+@Author: Adarsh Koppa Manjunath"""
 
 
 
