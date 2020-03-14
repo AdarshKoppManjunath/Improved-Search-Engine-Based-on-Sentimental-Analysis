@@ -1,6 +1,8 @@
 # Improved-Search-Engine-Based-on-Sentimental-Analysis
 
-This project is done as part of software engineering class. Project objective is to create a searh engine which takes a input from user and input should be topic related to news. 
-Website will be searching all relavant articles from web and result will be displayed to user in 30 lines so that user doesn't have to open multiple tabs sequentially. Unique feature tried here is adding sentimental analysis for user search.
+This project is done as part of the CS 872-Software Engineering class at the University of Regina, under the guidance of Dr. Samira Sadaoui.
 
-For this project we are using Django framework and  Visual Studio Code IDE
+The project objective is to create a search engine which takes input from user and input should be topic related to the news. 
+The website will be searching all relevant articles from the web and the result will be displayed to the user in 30 lines so that the user doesn't have to open multiple tabs sequentially. The unique feature tried here is adding sentimental analysis for user searches. The project also focused on design patterns like an observer, factory and protected proxy. 
+
+For this project, we are using Django framework and  Visual Studio Code IDE
