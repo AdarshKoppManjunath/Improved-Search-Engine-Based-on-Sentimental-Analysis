@@ -9,6 +9,7 @@ django-background-tasks==1.2.5
 django-compat==1.0.15
 django-extensions==2.2.8
 django-sslserver==0.22
+django-heroku==0.3.1
 fake-useragent==0.1.11
 future==0.18.2
 google==2.0.3
