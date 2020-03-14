@@ -2,7 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-
+"""All models saved with dbsqlite3
+@Author: Adarsh Koppa Manjunath"""
 
 class Feedback(models.Model):
     username=models.CharField(max_length=200)
