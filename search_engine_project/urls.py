@@ -22,6 +22,8 @@ from django.contrib import admin
 
 
 
+""""file modified to view factory pattern
+@Author: Adarsh Koppa Manjunath"""
 
 
 
