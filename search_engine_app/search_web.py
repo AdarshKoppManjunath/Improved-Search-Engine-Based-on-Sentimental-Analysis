@@ -24,7 +24,7 @@ from search_engine_app.validations import validation
 
 class SearchWeb:
 
-    def __init__(self,topic,sentiment="",num=50,stop=50,final_output={},sentiment_dict={}):
+    def __init__(self,topic,sentiment="",num=10,stop=10,final_output={},sentiment_dict={}):
         self.topic=topic
         self.final_output=final_output
         self.sentiment=sentiment
@@ -150,7 +150,7 @@ class SearchWeb:
             neg_count = 0
             neg_correct = 0
             
-            for word in text:
+            for word in text: 
                 analysis = TextBlob(word)
                 if analysis.sentiment.polarity < 0:
                     neg_correct += 1
