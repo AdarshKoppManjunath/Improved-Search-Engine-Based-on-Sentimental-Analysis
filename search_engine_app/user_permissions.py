@@ -1,5 +1,7 @@
 from django.contrib.auth import authenticate
 
+""" This file is to check whether the user is authenticated or not.
+@Author: Adarsh Koppa Manjunath"""
 
 class Authentication:
 
