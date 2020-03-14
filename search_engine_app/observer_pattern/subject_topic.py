@@ -3,7 +3,8 @@ from search_engine_app.models import UserPortal
 from django.contrib.auth.models import User
 #from search_engine_app.tasks import CheckEevent
 
-
+""" This file is to implement observer pattern
+@Author: Adarsh Koppa Manjunath"""
 
 
 
