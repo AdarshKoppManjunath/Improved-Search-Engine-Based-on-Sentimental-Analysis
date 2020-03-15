@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 #import logger
 import django_heroku
+from django.contrib.messages import constants as messages
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -132,5 +133,27 @@ STATIC_ROOT= os.path.join(BASE_DIR,'assets')
 
 #logging
 from .logger import LOGGING
+
+'''
+The messages framework is based on a configurable level architecture similar to that of the Python logging module. Message levels allow you to group messages by type so they can be filtered or displayed differently in views and templates.
+The built-in levels, which can be imported from django.contrib.messages directly, are:
+
+Constant	Purpose
+DEBUG	    Development-related messages that will be ignored (or removed) in a production deployment
+INFO	    Informational messages for the user
+SUCCESS	    An action was successful, e.g. “Your profile was updated successfully”
+WARNING	    A failure did not occur but may be imminent
+ERROR	    An action was not successful or some other failure occurred
+'''
+
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
+
 django_heroku.settings(locals())
 
