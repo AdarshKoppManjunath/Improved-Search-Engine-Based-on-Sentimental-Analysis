@@ -1,4 +1,4 @@
-/**
+/*
  * main.css
  *
  * The home page should be easily understandable. So I have used updated google fonts that look better on all screens.
@@ -11,6 +11,7 @@
  * - Radio Buttons
  * - Search Button
  * - Input Text Area
+ * - Background Color and fonts
  *
  */
 
@@ -21,6 +22,7 @@ p.title
   text-align: center;
   color: white;
   padding-top: 10%;
+  margin-top: 0px;
 }
 
 * 
@@ -39,7 +41,6 @@ form.example input[type=text]
   margin-left: 20%;
   margin-top: 5px;
   background: whitesmoke;
-  
 }
 
 form.example button 
@@ -82,10 +83,22 @@ p
   color: white;
 }
 
+body 
+{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Arial;
+  height: 100%;
+  margin-top: 50px;
+}
 
 label.custom-control-label
 {
   color: white;
 }
-
-
