@@ -38,11 +38,15 @@ class URLFactory:
             path('search_engine_app/home.html', SearchResultView.search),
             path('search_engine_app/ise.html', HomePageIntroView.ise),
             path('search_engine_app/projectTeam.html', HomePageIntroView.projectTeam),
-            path('search_engine_app/login.html', UsersAuthenticationView.loginPage, name = 'login'),
+            path('search_engine_app/login.html', UsersAuthenticationView.loginPage, name ='login'),
             path('search_engine_app/register.html',  UsersAuthenticationView.registerPage),
             path("search_engine_app/logout", UsersAuthenticationView.logoutUser, name="logout"),
             path("search_engine_app/userPortal.html",UserPortalView.userPortal),
             path("search_engine_app/viewYourUpdatedResults.html",NewsReaderStoryUpdateView.viewYourUpdatedResult),
+            path("search_engine_app/feedBack.html",FeedbackView.feedback_view),
+            path("search_engine_app/feedback_login.html",UsersAuthenticationView.feedback_login_view),
+         
+            
             
         ]
         return urlpatterns
