@@ -1,44 +1,63 @@
-
-
-/* FontAwesome for working BootSnippet :> */
+/*
+ * projectTeamStyles.css
+ *
+ * 
+ * Author: Tanu Nanda Prabhu
+ * 
+ *
+ * Index
+ * - Fonts
+ * - Responsive Images
+ * - Hovering
+ * - Icons
+ * - Background Color
+ *
+ */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-#team {
+#team 
+{
     background: black !important;
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus 
+{
     background-color: #108d6f;
     border-color: #108d6f;
     box-shadow: none;
     outline: none;
 }
 
-.btn-primary {
+.btn-primary 
+{
     color: #fff;
     background-color: #007b5e;
     border-color: #007b5e;
 }
 
-section {
+section 
+{
     padding: 40px 0;
 }
 
-section .section-title {
+section .section-title 
+{
     text-align: center;
     color: white;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
 
-#team .card {
+#team .card 
+{
     border: none;
     background: grey;
 }
 
 .image-flip:hover .backside,
-.image-flip.hover .backside {
+.image-flip.hover .backside 
+{
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
@@ -48,14 +67,16 @@ section .section-title {
 }
 
 .image-flip:hover .frontside,
-.image-flip.hover .frontside {
+.image-flip.hover .frontside 
+{
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
-.mainflip {
+.mainflip 
+{
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
@@ -68,7 +89,8 @@ section .section-title {
     position: relative;
 }
 
-.frontside {
+.frontside 
+{
     position: relative;
     -webkit-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
@@ -76,7 +98,8 @@ section .section-title {
     margin-bottom: 30px;
 }
 
-.backside {
+.backside 
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -92,7 +115,8 @@ section .section-title {
 }
 
 .frontside,
-.backside {
+.backside 
+{
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -110,34 +134,39 @@ section .section-title {
 }
 
 .frontside .card,
-.backside .card {
+.backside .card 
+{
     min-height: 400px;
 }
 
-.backside .card a {
+.backside .card a 
+{
     font-size: 25px;
     color: black !important;
 }
 
 .frontside .card .card-title,
-.backside .card .card-title {
+.backside .card .card-title 
+{
     color: white !important;
     font-weight: bold;
 
 }
 
-.frontside .card .card-body img {
+.frontside .card .card-body img 
+{
     width: 175px;
     height: 175px;
     border-radius: 50%;
 }
 
-.card-text{
-        font-size: 20px;
-        color: white;
-    }
+.card-text
+{
+    font-size: 20px;
+    color: white;
+}
 
-  li.list-inline-item i.fa{
-      color: blue;
-  }
-
+li.list-inline-item i.fa
+{
+    color: blue;
+}
