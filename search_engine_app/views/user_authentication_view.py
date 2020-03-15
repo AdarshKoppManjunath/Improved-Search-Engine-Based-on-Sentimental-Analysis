@@ -21,6 +21,7 @@ class UsersAuthenticationView(View):
             user = authenticate(request, username = username, password = password )
             if user is not None:
                 login(request, user)
+                print(request.path)
                 return redirect('userPortal.html')
             else:
                 messages.error(request,'Login failed!!! invalid credentials.')
@@ -30,3 +31,17 @@ class UsersAuthenticationView(View):
     def logoutUser(request):
         logout(request)
         return redirect('login')
+
+    def feedback_login_view(request):
+        if request.method == 'POST':
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = authenticate(request, username = username, password = password )
+            if user is not None:
+                login(request, user)
+                print(request.path)
+                return redirect('feedBack.html')
+            else:
+                messages.error(request,'Login failed!!! invalid credentials.')
+        context = {}
+        return render(request, 'login.html', context)
