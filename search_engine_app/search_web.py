@@ -3,6 +3,7 @@ from googlesearch import search
 import requests
 import threading
 from bs4 import BeautifulSoup
+from bs4.element import Comment
 import urllib.request
 import urllib.error
 import time
@@ -24,7 +25,7 @@ from search_engine_app.validations import validation
 
 class SearchWeb:
 
-    def __init__(self,topic,sentiment="",num=10,stop=10,final_output={},sentiment_dict={}):
+    def __init__(self,topic,sentiment="",num=5,stop=5,final_output={},sentiment_dict={}):
         self.topic=topic
         self.final_output=final_output
         self.sentiment=sentiment
@@ -69,17 +70,18 @@ class SearchWeb:
         try:
             sentiment=""
             html = urllib.request.urlopen(url).read()
-            soup = BeautifulSoup(html)
-            soup = BeautifulSoup(html)
-            for script in soup(["script", "style"]):
-                script.extract()
-            text = soup.get_text()
-            lines = (line.strip() for line in text.splitlines())
-            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-            text = '\n'.join(chunk for chunk in chunks if chunk)
-            self.final_output[url]=text[:5000]
+            soup = BeautifulSoup(html,'html.parser')
+            texts = soup.findAll(text=True)
+            visible_texts = filter(self.tag_visible, texts)  
+            text= u" ".join(t.strip() for t in visible_texts)
+            if len(text)<1000:
+                return ""
+
+            text=text[4000:9000].split(". ")
+            self.final_output[url]=" ".join(sen for sen in text[1:-1])
 
             text=self.clean_text(text)
+            
             if self.sentiment!="na":
                 positive,negative=self.sentiment_analysis(text)
                 log.debug("\n URL:%s \n Positive-%s \n Negative-%s"%(url,positive,negative))
@@ -99,6 +101,15 @@ class SearchWeb:
             log.error(traceback.format_exc())
             return sentiment
         
+    
+    def tag_visible(self,element):
+        log.debug("\n inside tag_visible function \n")
+        print("inside tag_visible")
+        if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
+             return False
+        if isinstance(element, Comment):
+            return False
+        return True
 
 
     def clean_text(self,text):
@@ -109,6 +120,7 @@ class SearchWeb:
         @return
             final_output(dict): url and serach result"""
         try:
+            
             #remove square brackets
             text = re.sub('\[[^]]*\]', '', text)
             #remove digits
@@ -123,6 +135,7 @@ class SearchWeb:
             tokens = tokenizer.tokenize(text)
             tokens = [token.strip() for token in tokens]
             filtered_tokens = [token for token in tokens if token.lower() not in stopword_list]
+            
             return filtered_tokens
 
         except Exception as e:
@@ -191,7 +204,6 @@ class SearchWeb:
             langobj=validation()
             lang=langobj.isEnglish(self.topic)
             if lang==False:
-                print("Oops! entered topic is not in English! we support only English language at the moment")
                 return "Oops! entered topic is not in English! we support only English language at the moment"
 
             web_result_list=self.search_web()
