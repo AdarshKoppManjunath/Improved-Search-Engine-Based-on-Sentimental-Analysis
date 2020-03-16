@@ -83,7 +83,7 @@ class SearchWeb:
             text=self.clean_text(str(text))
             
             if self.sentiment!="na":
-                positive,negative=self.sentiment_analysis(text)
+                positive,negative=self.sentiment_analysis(str(text))
                 log.debug("\n URL:%s \n Positive-%s \n Negative-%s"%(url,positive,negative))
                 if sentiment =="negative":
                     self.sentiment_dict[url]=negative
