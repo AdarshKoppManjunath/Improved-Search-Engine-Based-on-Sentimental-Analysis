@@ -80,7 +80,7 @@ class SearchWeb:
             text=text[4000:9000].split(". ")
             self.final_output[url]=" ".join(sen for sen in text[1:-1])
 
-            text=self.clean_text(text)
+            text=self.clean_text(str(text))
             
             if self.sentiment!="na":
                 positive,negative=self.sentiment_analysis(text)
@@ -104,7 +104,6 @@ class SearchWeb:
     
     def tag_visible(self,element):
         log.debug("\n inside tag_visible function \n")
-        print("inside tag_visible")
         if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
              return False
         if isinstance(element, Comment):
