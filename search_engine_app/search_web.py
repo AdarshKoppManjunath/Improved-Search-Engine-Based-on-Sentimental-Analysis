@@ -77,7 +77,7 @@ class SearchWeb:
             if len(text)<1000:
                 return ""
 
-            text=text[4000:9000].split(". ")
+            text=text[3000:9000].split(". ")
             self.final_output[url]=" ".join(sen for sen in text[1:-1])
 
             text=self.clean_text(str(text))
