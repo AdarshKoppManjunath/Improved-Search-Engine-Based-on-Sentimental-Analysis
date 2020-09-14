@@ -21,33 +21,33 @@ https://improvedsearchengine-se.herokuapp.com/search_engine_app/
         
 <br><b>Screenshots</b><br>
 
-<br> Proposed Solution <br>
+<br> <b>1) Proposed Solution <br>
 
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Propsed%20flow.PNG"> </img>
 
-<br> Use case diagram for NewsReader <br>
+<br>2) Use case diagram for NewsReader <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/UsercaseNewsreader.PNG"> </img>
 
-<br> Use case diagram for Admin <br>
+<br>3) Use case diagram for Admin <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/UsecaseAdmin.PNG"> </img>
-<br> Observer Design Pattern <br>
+<br> 4)Observer Design Pattern <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Observer%20pattern.PNG"> </img>
-<br> Factory Design Pattern <br>
+<br> 5)Factory Design Pattern <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Factory%20pattern.PNG"> </img>
-<br> Proxy Design Pattern <br>
+<br> 6)Proxy Design Pattern <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Proxypattern.PNG"> </img>
-<br> MVT <br>
+<br>7)MVT <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/MVT.PNG"> </img>
-<br> Deployment <br>
+<br> 8)Deployment using Heroku<br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Deployment.PNG"> </img>
-<br> Few screenshots of testing performed ( executed 4 testcases for each testing, but have not included all the screenshots here) <br>
+<br> 9)Few screenshots of testing performed ( executed 4 testcases for each testing, but have not included all the screenshots here) <br>
 
-<br> Functionality testing- User Input and Search Result <br>
+<br> 9.1)Functionality testing- User Input and Search Result <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/FT1.PNG"> </img>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/FT2.PNG"> </img>
-<br> Time Efficiency for the URL- https://improvedsearchengine-se.herokuapp.com/search engine app/feedBack.html using pingdom <br>
+<br> 9.2)Time Efficiency for the URL- https://improvedsearchengine-se.herokuapp.com/search engine app/feedBack.html using pingdom <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/TE.PNG"> </img>
-<br> Load Balancing using Jmeter <br>
+<br> 9.3)Load Balancing using Jmeter <br>
 
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/LT.PNG"> </img>
 
