@@ -1,6 +1,6 @@
 # Improved-Search-Engine-Based-on-Sentimental-Analysis
 
-<br><b>Project Summary<\b><br>
+<br><b>Project Summary</b><br>
 This project is done as part of the CS 872-Software Engineering class at the University of Regina, under the guidance of Dr. Samira Sadaoui.
   
 The project objective is to create a search engine which takes input from user and input should be topic related to the news. 
@@ -9,7 +9,7 @@ For this project, we have used Django framework and  Visual Studio Code IDE
 
 https://improvedsearchengine-se.herokuapp.com/search_engine_app/
 
-<br><b>Below are the steps considered while developing this application<\b><br>
+<br><b>Below are the steps considered while developing this application</b><br>
         <br> 1) Problem Defination and Motivation.
         <br> 2) Feasibility Study.
         <br> 3) Functional Requirements, Usecases and Software Qualities.
@@ -21,6 +21,6 @@ https://improvedsearchengine-se.herokuapp.com/search_engine_app/
  
  
   
-#Proposed flow
+<br>Proposed flow<br>
 https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Propsed%20flow.PNG
 
