@@ -47,7 +47,7 @@ https://improvedsearchengine-se.herokuapp.com/search_engine_app/
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/FT2.PNG"> </img>
 <br> 9.2)Time Efficiency for the URL- https://improvedsearchengine-se.herokuapp.com/search engine app/feedBack.html using pingdom <br>
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/TE.PNG"> </img>
-<br> 9.3)Load Balancing using Jmeter <br>
+<br> 9.3)Load testing using Jmeter <br>
 
 <img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/LT.PNG"> </img>
 
