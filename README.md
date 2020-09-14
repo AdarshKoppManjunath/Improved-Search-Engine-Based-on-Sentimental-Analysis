@@ -22,5 +22,6 @@ https://improvedsearchengine-se.herokuapp.com/search_engine_app/
  
   
 <br>Proposed flow<br>
-https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Propsed%20flow.PNG
+
+<img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Propsed%20flow.PNG"> </img>
 
