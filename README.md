@@ -18,10 +18,10 @@ https://improvedsearchengine-se.herokuapp.com/search_engine_app/
         <br> 6) Deplyment.
         <br> 7) Technical Documentation.
         <br> 8) Accpetance Testing ( Functional, Robustnes, Performance, Security and Load Testing)
- 
- 
-  
-<br>Proposed flow<br>
+        
+<br><b>Screenshots</b><br>
 
-<img src="https://github.com/AdarshKoppManjunath/Improved-Search-Engine-Based-on-Sentimental-Analysis/blob/master/Screenshots/Propsed%20flow.PNG"> </img>
+<br> Proposed Solution < br>
+
+
 
